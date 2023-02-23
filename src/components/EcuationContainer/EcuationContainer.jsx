@@ -1,10 +1,9 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import "./styles.css";
 
-const EcuationContainer = ({ cant }) => {
+const EcuationContainer = ({ cant, boxWidth }) => {
   const boxStyle = {
     alignItems: "center",
-    w: "85%",
     maxW: "550px",
     minW: "290px",
     m: "20px auto",
@@ -14,7 +13,7 @@ const EcuationContainer = ({ cant }) => {
 
   const keyStyle = {
     m: "auto",
-    fontFamily: "Segoe UI, Tahoma, Geneva, Verdana, sans-serif",
+    fontFamily: "Tahoma",
     lineHeight: 0,
     pos: "relative",
     transform: "translateY(-30px)",
@@ -61,7 +60,7 @@ const EcuationContainer = ({ cant }) => {
   };
 
   return (
-    <Flex className="math-box-size" sx={boxStyle}>
+    <Flex className="math-box-size" sx={boxStyle} w={boxWidth}>
       <Flex alignItems="center" justifyContent="space-around" m="auto" mr="0">
         <Text className="math-llave" sx={keyStyle}>
           &#123;

@@ -2,7 +2,7 @@
   height: 250px;
 }
 .math-llave {
-  font-size:12em;
+  font-size:10em;
 }
 .math {
   font-size: 1.8em;
@@ -10,7 +10,7 @@
 
 @media screen and (min-width: 425px) {
   .math-llave {
-    font-size:13.5em;
+    font-size:12.5em;
   }
   .math {
     font-size: 2em;
@@ -23,8 +23,16 @@
 }
 
 @media screen and (min-width: 600px) {
+  .math-llave {
+    font-size: 12em;
+  }
   .math {
     font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .math-llave {
+    font-size: 10em;
   }
 }
 
@@ -33,7 +41,7 @@
     height: 300px;
   }
   .math-llave {
-    font-size:15em;
+    font-size:12.5em;
     transform: translateY(-40px);
   }
   .math {
