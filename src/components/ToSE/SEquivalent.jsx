@@ -55,7 +55,7 @@ const SEquivalent = () => {
               <Box>
                 <Grid
                   m="auto"
-                  mr={0}
+                  ml={0}
                   w="200px"
                   gridAutoFlow="row dense"
                   gridTemplateColumns="20px 130px"
@@ -95,7 +95,7 @@ const SEquivalent = () => {
             <Box>
               <Grid
                 m="auto"
-                mr={0}
+                ml={0}
                 w="200px"
                 gridAutoFlow="row dense"
                 gridTemplateColumns="20px 130px"

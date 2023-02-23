@@ -32,7 +32,7 @@ const SStaggered = () => {
               <Box>
                 <Grid
                   m="auto"
-                  mr={0}
+                  ml={0}
                   w="200px"
                   gridAutoFlow="row dense"
                   gridTemplateColumns="20px 130px"
@@ -77,7 +77,7 @@ const SStaggered = () => {
               <Flex justifyContent="center" alignItems="center">
                 <Grid
                   m="auto"
-                  mr={0}
+                  ml={0}
                   w="130px"
                   gridAutoFlow="row dense"
                   gridTemplateColumns="20px 130px"
