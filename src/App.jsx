@@ -9,7 +9,6 @@ import {
   List,
   Divider,
   Grid,
-  Icon,
   Image,
   OrderedList,
   Flex,
@@ -19,6 +18,11 @@ import EcuationContainer from "./components/EcuationContainer/EcuationContainer"
 import MSustitucion from "./components/MSustitucion";
 import MEqualization from "./components/MEqualization";
 import MRedcution from "./components/MReduction";
+import CircleIcon from "./hooks/CircleIcon";
+import SEquivalent from "./components/ToSE/SEquivalent";
+import SStaggered from "./components/ToSE/SStaggered";
+import SCantSoluciones from "./components/ToSE/SCantSoluciones";
+import TeoremaRF from "./components/TeoremaRF";
 
 function App() {
   const bannerImg = {
@@ -43,15 +47,6 @@ function App() {
     gap: "10px 10px",
     textAlign: "justify",
   };
-
-  const CircleIcon = (props) => (
-    <Icon viewBox="0 0 200 200" {...props}>
-      <path
-        fill="currentColor"
-        d="M 100, 100 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"
-      />
-    </Icon>
-  );
   const handleClickScroll = (elt) => {
     const name = elt.target.className.split(" ");
     const element = document.getElementById(name[0]);
@@ -102,9 +97,17 @@ function App() {
             Contenido
           </Heading>
           <List spacing={3} pl="20px">
-            <ListItem onClick={handleClickScroll} className="SEL">
+            <ListItem onClick={handleClickScroll} className="SE">
               <CircleIcon boxSize={2} mr={2} color="red.500" />
-              Sistemas de ecuaciones lineales
+              Sistemas de ecuaciones
+            </ListItem>
+            <ListItem onClick={handleClickScroll} className="TSE">
+              <CircleIcon boxSize={2} mr={2} color="red.500" />
+              Tipos Sistemas de ecuaciones
+            </ListItem>
+            <ListItem onClick={handleClickScroll} className="TRF">
+              <CircleIcon boxSize={2} mr={2} color="red.500" />
+              Teorema de Rouché-Frobenius
             </ListItem>
             <ListItem onClick={handleClickScroll} className="MS">
               <CircleIcon boxSize={2} mr={2} color="red.500" />
@@ -124,7 +127,7 @@ function App() {
           gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
         >
           <Box sx={contentBox}>
-            <Heading mb="10px" id="SEL" textAlign="left">
+            <Heading mb="10px" id="SE" textAlign="left">
               Sistemas de ecuaciones
             </Heading>
             <Text>
@@ -146,7 +149,7 @@ function App() {
               <ListItem>
                 <Text color="black">
                   Existe una cantidad infinita de soluciones.
-                </Text>{" "}
+                </Text>
               </ListItem>
               <ListItem>
                 <Text color="black">No existe solución.</Text>{" "}
@@ -160,6 +163,36 @@ function App() {
           </Box>
           <EcuationContainer cant={"a"} boxWidth="85%" />
         </Grid>
+        <Divider borderColor="blackAlpha.600" w="95%" m="auto" />
+        <Box p="10px 30px" textAlign="justify">
+          <Heading id="TSE" textAlign="left">
+            Tipos de sistemas de ecuaciones
+          </Heading>
+          <Text>
+            Dependiendo del número de soluciones que tengan los sistemas de
+            ecuaciones lineales tendremos:
+          </Text>
+          <List ml="30px">
+            <ListItem>
+              <CircleIcon boxSize={2} mr={2} color="red.500" />
+              Sistema Incompatible: no tiene solución.
+            </ListItem>
+            <ListItem>
+              <CircleIcon boxSize={2} mr={2} color="red.500" />
+              Sistema Compatible Determinado (SCD): posee una única solución.
+            </ListItem>
+            <ListItem>
+              <CircleIcon boxSize={2} mr={2} color="red.500" />
+              Sistema Compatible Indeterminado (SCI): posee infinitas
+              soluciones.
+            </ListItem>
+          </List>
+          <SCantSoluciones />
+          <SEquivalent />
+          <SStaggered />
+        </Box>
+        <Divider borderColor="blackAlpha.600" w="95%" m="auto" />
+        <TeoremaRF />
         <Divider borderColor="blackAlpha.600" w="95%" m="auto" />
         <Box p="10px 30px" textAlign="justify">
           <Heading id="MS" textAlign="left">
@@ -281,7 +314,7 @@ function App() {
         alignItems="center"
       >
         <Text fontWeigth="100" size="xs" color="white" m="auto">
-          Creado por Alfredo Tiapa
+          Creado por Alfredo Tiapa y Javier Alvarado
         </Text>
       </Flex>
     </ChakraProvider>
