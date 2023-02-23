@@ -20,7 +20,7 @@ const MSustitucion = () => {
       w="100%"
       gridGap="10px 30px"
       gridAutoFlow="row dense"
-      gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
+      gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))"
       pl="10px"
     >
       <Box m="10px 0">

@@ -16,7 +16,7 @@ import chart from "../recourse/img/geogebra-export3.png";
 
 const MRedcution = () => {
   return (
-    <Box p="20px 30px" textAlign="justify">
+    <Box p="20px 0" textAlign="justify">
       <Heading size="sm">Metodo de reducción</Heading>
       <Text>
         El método de reducción consiste en sumar (o restar) las ecuaciones del
@@ -30,7 +30,7 @@ const MRedcution = () => {
         w="100%"
         gridGap="10px 30px"
         gridAutoFlow="row dense"
-        gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
+        gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))"
         pl="10px"
         mt="10px"
       >

@@ -19,7 +19,7 @@ const SStaggered = () => {
         En un sistema escalonado cada ecuación posee una incógnita menos que la
         anterior.
       </Text>
-      <Card variant="outline" m="10px 30px" pl="10px" mt="10px">
+      <Card variant="outline" m="10px" pl="10px" mt="10px">
         <CardHeader>
           <Heading size="md">Ejemplos</Heading>
         </CardHeader>
@@ -29,7 +29,7 @@ const SStaggered = () => {
               <Heading size="xs" textTransform="uppercase">
                 Ejemplo de sistema escalonado:
               </Heading>
-              <Flex justifyContent="center">
+              <Box>
                 <Grid
                   m="auto"
                   mr={0}
@@ -63,7 +63,7 @@ const SStaggered = () => {
                     <Text>y = 4</Text>
                   </Box>
                 </Grid>
-              </Flex>
+              </Box>
             </Box>
             <Box>
               <Heading
@@ -78,7 +78,7 @@ const SStaggered = () => {
                 <Grid
                   m="auto"
                   mr={0}
-                  w="140px"
+                  w="130px"
                   gridAutoFlow="row dense"
                   gridTemplateColumns="20px 130px"
                   pl="10px"

@@ -37,7 +37,7 @@ const TeoremaRF = () => {
           determinado. Si es menor que n , es indeterminado.
         </ListItem>
       </List>
-      <Card variant="outline" m="10px 30px" pl="10px" mt="10px">
+      <Card w="100%" variant="outline" pl="10px" mt="10px">
         <CardHeader>
           <Heading size="md">Desarrollo demostrativo</Heading>
         </CardHeader>
@@ -73,8 +73,8 @@ const TeoremaRF = () => {
                 Matriz ampliada
               </Heading>
               <Box fontFamily="math" ml="10px">
+                <Text>A* = (A|b) =</Text>
                 <Flex alignItems="center">
-                  <Text>A* = (A|b) =</Text>
                   <Text fontSize="4em" lineHeight={1}>
                     (
                   </Text>
@@ -108,8 +108,8 @@ const TeoremaRF = () => {
                 <Text fontSize="4em" lineHeight={1}>
                   |
                 </Text>
-                <Text>= 4 + 9 + 4 - 12 -1 -12 = -8 ≠ 0</Text>
               </Flex>
+              <Text>= 4 + 9 + 4 - 12 -1 -12 = -8 ≠ 0</Text>
               <Text pt="2" fontSize="sm">
                 Como el rango de A es máximo, el rango de la matriz ampliada A ∗
                 es también 3. Por el teorema de Rouché-Frobenius, el sistema es

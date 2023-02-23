@@ -8,10 +8,8 @@ import {
   Stack,
   StackDivider,
   Grid,
-  Image,
   List,
   ListItem,
-  Flex,
 } from "@chakra-ui/react";
 import CircleIcon from "../../hooks/CircleIcon";
 
@@ -44,7 +42,7 @@ const SEquivalent = () => {
           lineal de otras.
         </ListItem>
       </List>
-      <Card variant="outline" m="10px 30px" pl="10px" mt="10px">
+      <Card variant="outline" m="10px" pl="10px" mt="10px">
         <CardHeader>
           <Heading size="md">Ejemplos</Heading>
         </CardHeader>
@@ -54,7 +52,7 @@ const SEquivalent = () => {
               <Heading size="xs" textTransform="uppercase">
                 Los siguientes sistemas de ecuaciones son equivalentes:
               </Heading>
-              <Flex justifyContent="center">
+              <Box>
                 <Grid
                   m="auto"
                   mr={0}
@@ -72,7 +70,7 @@ const SEquivalent = () => {
                     <Text>3x + 2y + z= 2</Text>
                   </Box>
                 </Grid>
-                <Box m="auto 0" w="100px">
+                <Box m="auto 0" w="100px" textAlign="center">
                   <Text>f1&#60;--&#62;f2</Text>
                 </Box>
                 <Grid
@@ -92,9 +90,9 @@ const SEquivalent = () => {
                     <Text>3x + 2y + z = 2</Text>
                   </Box>
                 </Grid>
-              </Flex>
+              </Box>
             </Box>
-            <Flex justifyContent="center">
+            <Box>
               <Grid
                 m="auto"
                 mr={0}
@@ -112,7 +110,7 @@ const SEquivalent = () => {
                   <Text>3x + 2y + z= 2</Text>
                 </Box>
               </Grid>
-              <Box m="auto 0" w="100px">
+              <Box m="auto 0" w="100px" textAlign="center">
                 <Text>f2&#60;--&#62;f2-2f1</Text>
                 <Text>f3&#60;--&#62;f3-3f3</Text>
               </Box>
@@ -133,7 +131,7 @@ const SEquivalent = () => {
                   <Text>-y - 2z = 2</Text>
                 </Box>
               </Grid>
-            </Flex>
+            </Box>
           </Stack>
         </CardBody>
       </Card>

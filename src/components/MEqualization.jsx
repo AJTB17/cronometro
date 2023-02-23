@@ -14,7 +14,7 @@ import chart from "../recourse/img/geogebra-export2.png";
 
 const MEqualization = () => {
   return (
-    <Box p="20px 30px" textAlign="justify">
+    <Box p="20px 0" textAlign="justify">
       <Heading size="sm">Metodo de igualación</Heading>
       <Text>
         Este método consiste en despejar la misma incógnita en las dos
@@ -26,7 +26,7 @@ const MEqualization = () => {
         w="100%"
         gridGap="10px 30px"
         gridAutoFlow="row dense"
-        gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
+        gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))"
         pl="10px"
         mt="10px"
       >

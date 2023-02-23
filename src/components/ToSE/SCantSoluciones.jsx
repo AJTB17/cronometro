@@ -24,13 +24,11 @@ const SCantSoluciones = () => {
       <Grid
         alignItems="center"
         w="100%"
-        gridGap="10px 30px"
         gridAutoFlow="row dense"
-        gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
-        pl="10px"
+        gridTemplateColumns="repeat(auto-fit, minmax(230px, 1fr))"
         mt="10px"
       >
-        <Card maxW="600px" variant="outline">
+        <Card w="100%" variant="outline" mt="10px">
           <CardBody>
             <Stack divider={<StackDivider />} spacing="2">
               <Box>
@@ -100,9 +98,9 @@ const SCantSoluciones = () => {
           </CardBody>
         </Card>
         <Box>
-          <Image m="10px auto" maxW="350px" src={chart1} />
-          <Image m="10px auto" maxW="350px" src={chart2} />
-          <Image m="10px auto" maxW="350px" src={chart3} />
+          <Image m="10px auto" w="100%" maxW="350px" src={chart1} />
+          <Image m="10px auto" w="100%" maxW="350px" src={chart2} />
+          <Image m="10px auto" w="100%" maxW="350px" src={chart3} />
         </Box>
       </Grid>
     </Box>

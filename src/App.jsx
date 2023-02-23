@@ -218,7 +218,7 @@ function App() {
             w="100%"
             gridGap="10px 20px"
             gridAutoFlow="row dense"
-            gridTemplateColumns="repeat(auto-fit, minmax(300px, 1fr))"
+            gridTemplateColumns="repeat(auto-fit, minmax(250px, 1fr))"
           >
             <Box>
               <Heading size="md" textAlign="left">
@@ -257,7 +257,6 @@ function App() {
             </Box>
             <Box>
               <Heading size="md" textAlign="left">
-                {" "}
                 Aplicaciones en la actualidad
               </Heading>
               <Text m="10px 0">
@@ -277,7 +276,7 @@ function App() {
                 automático. Tambien se pueden ver más usos en ciertas diciplinas
                 como:
               </Text>
-              <OrderedList m="10px 30px" mr="0">
+              <OrderedList m="10px 0px" mr="0">
                 <ListItem>
                   Economía: Los sistemas de ecuaciones se utilizan para modelar
                   la oferta y la demanda de bienes y servicios en la economía.
