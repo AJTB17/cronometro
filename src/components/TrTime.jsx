@@ -2,18 +2,17 @@ import { Tr, Td } from "@chakra-ui/react";
 
 const TrTime = ({ times }) => {
   const trs = [];
-  const invertArray = times.reverse();
-  invertArray.forEach((time, key) => {
+  for (var i = times.length; i > 0; i--) {
     trs.push(
-      <Tr key={key}>
-        <Td />
+      <Tr key={i}>
+        <Td textAlign="center">{i}</Td>
         <Td textAlign="center" fontSize="2xl" letterSpacing="2px">
-          {time}
+          {times[i - 1]}
         </Td>
         <Td />
       </Tr>
     );
-  });
+  }
   return <>{trs}</>;
 };
 
