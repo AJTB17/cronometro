@@ -1,38 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Heading } from "@chakra-ui/react";
+import useStopwatch from "../hooks/useStopWatch";
 
-const timeFormat = (date) => {
-  if (!date) return "00:00:00";
-
-  let mm = date.getUTCMinutes();
-  let ss = date.getSeconds();
-  let cm = Math.round(date.getMilliseconds() / 10);
-
-  mm = mm < 10 ? "0" + mm : mm;
-  ss = ss < 10 ? "0" + ss : ss;
-  cm = cm < 10 ? "0" + cm : cm;
-
-  return `${mm}:${ss}:${cm}`;
-};
-
-export default function DisplayTop({ batman, run, initial }) {
+export default function DisplayTop({ status, batman, initial }) {
   const [diff, setDiff] = useState(null);
+  const { timeFormat } = useStopwatch();
 
   const tick = () => {
     setDiff(new Date(+new Date() - initial));
   };
 
   useEffect(() => {
-    if (initial && run) {
+    if (initial && status) {
       requestAnimationFrame(tick);
     }
-  }, [initial, run]);
+  }, [initial, status]);
 
   useEffect(() => {
-    if (diff && run) {
+    if (diff && status) {
       requestAnimationFrame(tick);
     }
-  }, [diff, run]);
+  }, [diff, status]);
   return (
     <Heading
       as="h1"
