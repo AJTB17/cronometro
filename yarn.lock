@@ -726,7 +726,7 @@
     "@babel/helper-module-transforms" "^7.20.11"
     "@babel/helper-plugin-utils" "^7.20.2"
 
-"@babel/plugin-transform-modules-commonjs@^7.19.6":
+"@babel/plugin-transform-modules-commonjs@^7.12.1", "@babel/plugin-transform-modules-commonjs@^7.19.6":
   version "7.21.2"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-modules-commonjs/-/plugin-transform-modules-commonjs-7.21.2.tgz#6ff5070e71e3192ef2b7e39820a06fb78e3058e7"
   integrity sha512-Cln+Yy04Gxua7iPdj6nOV96smLGjpElir5YwzF0LBPKoPlLDNJePNlrGGaybAJkd0zKRnOVXOgizSqPYMNYkzA==
@@ -4757,6 +4757,16 @@ ejs@^3.1.6:
   dependencies:
     jake "^10.8.5"
 
+electron-jsx@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/electron-jsx/-/electron-jsx-0.0.5.tgz#3865666c74b6d200a6b005ec34769245b374fc30"
+  integrity sha512-Bd9vLEUDQUMCKk0v2uF6mdH0+5jByP2wA4wxjpCdxrDkxjS/3p0t1JqLjQpmG/Iv3bqIWDJws7+ireIMmo51wg==
+  dependencies:
+    "@babel/core" "^7.12.3"
+    "@babel/plugin-transform-modules-commonjs" "^7.12.1"
+    "@babel/preset-react" "^7.12.5"
+    react-error-overlay "^6.0.8"
+
 electron-to-chromium@^1.4.284:
   version "1.4.310"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.310.tgz#cb85dc8ceac536e99b20a364d7ab00ea35168f9e"
@@ -5363,6 +5373,11 @@ file-loader@^6.2.0:
   dependencies:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
+
+file-saver@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.5.tgz#d61cfe2ce059f414d899e9dd6d4107ee25670c38"
+  integrity sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==
 
 filelist@^1.0.1:
   version "1.0.4"
@@ -8502,7 +8517,7 @@ react-dom@^18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
-react-error-overlay@^6.0.11:
+react-error-overlay@^6.0.11, react-error-overlay@^6.0.8:
   version "6.0.11"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.11.tgz#92835de5841c5cf08ba00ddd2d677b6d17ff9adb"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==

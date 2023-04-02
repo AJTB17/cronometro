@@ -7,15 +7,11 @@ import {
   TableContainer,
   Button,
 } from "@chakra-ui/react";
-import { useState } from "react";
 import TrTime from "./TrTime";
+import { useTableContext } from "../context/CronoProvider";
 
-export default function DisplayBot({ count }) {
-  const [times, setTimes] = useState([]);
-  const lap = () => {
-    setTimes([...times, count.current.innerHTML]);
-  };
-  const clear = () => setTimes([]);
+export default function DisplayBot() {
+  const [lap, clear, times] = useTableContext();
 
   return (
     <TableContainer overflowY="auto" h="450px">
